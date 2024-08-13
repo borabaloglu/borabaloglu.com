@@ -22,7 +22,7 @@ const Header = () => {
       <div className="hidden sm:flex gap-x-4">
         <Link
           className="hover:text-semantic-accent-moderate transition-colors"
-          href="https://drive.google.com/file/d/1-E3m9-ZfiLoAIsIZz9ThqpuMmClmOm7l/view?usp=sharing"
+          href="https://drive.google.com/file/d/1IXdM9tGALNyUd4gXf-DH8UnxaCLz4fZf/view?usp=sharing"
           target="_blank"
         >
           Resume
@@ -64,7 +64,7 @@ const Header = () => {
             <div className="flex flex-col gap-y-2 mt-8">
               <Link
                 className="hover:text-semantic-accent-moderate transition-colors p-4 text-center"
-                href="https://drive.google.com/file/d/1-E3m9-ZfiLoAIsIZz9ThqpuMmClmOm7l/view?usp=sharing"
+                href="https://drive.google.com/file/d/1IXdM9tGALNyUd4gXf-DH8UnxaCLz4fZf/view?usp=sharing"
                 target="_blank"
               >
                 Resume
