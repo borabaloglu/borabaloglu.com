@@ -41,7 +41,7 @@ export default function Home() {
         <div className="-mx-4">
           <GlowCapture>
             <Glow>
-              <div className="relative p-4 gap-x-4 cursor-pointer transition-colors rounded-md mt-4 group border-2 border-transparent glow:border-[#7765e2]/50 glow:bg-[#7765e2]/10">
+              <div className="relative p-4 gap-x-4 cursor-pointer transition-colors rounded-md mt-4 group sm:border-2 border-transparent glow:border-[#7765e2]/50 glow:bg-[#7765e2]/10">
                 <p className="text-label-xs text-semantic-fg-muted">
                   2023 - Present
                 </p>

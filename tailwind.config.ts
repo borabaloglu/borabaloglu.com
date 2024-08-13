@@ -10,6 +10,11 @@ const config: Config = {
     join(__dirname, "./node_modules/@borabaloglu/ui/dist/*"),
   ],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: "1rem",
+      },
+    },
     extend: {
       animation: {
         "ease-in-quad": "cubic-bezier(.55, .085, .68, .53)",
