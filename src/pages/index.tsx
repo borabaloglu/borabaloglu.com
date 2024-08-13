@@ -1,118 +1,130 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Glow, GlowCapture } from "@codaworks/react-glow";
 
-const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/Header/Header";
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.tsx</code>
+    <div className="container mx-auto">
+      <Header />
+      <div className="max-w-3xl mx-auto space-y-4 text-paragraph-md leading-relaxed mt-10">
+        <p>
+          With over five years of professional experience, I&rsquo;ve immersed
+          myself in building web, mobile, and Web3 products. Much of this
+          journey has been dedicated to crafting solutions from the ground up
+          for startups, where I&rsquo;ve been able to turn ideas into impactful,
+          user-friendly products.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <p>
+          Each project, whether big or small, has been an opportunity to
+          discover something new. The thrill of learning never fades, and with
+          every challenge, I&rsquo;ve become better at keeping up with the
+          fast-changing world of technology.
+        </p>
+        <p>
+          What I love most about being a builder is the transformation of a
+          simple idea or hobby into something that people genuinely appreciate
+          and use. There&rsquo;s a unique satisfaction in seeing the products
+          I&rsquo;ve developed making a difference in people&rsquo;s
+          lives—whether by simplifying tasks, offering entertainment, or
+          bringing joy. Listening to feedback, iterating on ideas, and enhancing
+          products to meet the needs of a broader audience is a driving force
+          behind my work.
+        </p>
+        <p>
+          When I&rsquo;m not building, you can find me making music, using AI to
+          produce digital art, exploring new foods with my wife, or enjoying
+          life with her and our beautiful cat, Lucy.
+        </p>
+      </div>
+      <div className="max-w-3xl mx-auto mt-10">
+        <h1 className="text-heading-2 font-semibold">Experiences</h1>
+        <div className="-mx-4">
+          <GlowCapture>
+            <Glow>
+              <div className="relative p-4 gap-x-4 cursor-pointer transition-colors rounded-md mt-4 group border-2 border-transparent glow:border-[#7765e2]/50 glow:bg-[#7765e2]/10">
+                <p className="text-label-xs text-semantic-fg-muted">
+                  2023 - Present
+                </p>
+                <h2 className="text-heading-3 font-semibold mt-2">Muro</h2>
+                <p className="mt-2 text-paragraph-md">
+                  Led product development and deployment, architected a
+                  microservice-based backend, and built web, mobile, and digital
+                  frame applications, along with the supporting cloud
+                  infrastructure. Played a key role in live event production and
+                  collaborated with neuroscientists to explore the emotional
+                  impact of digital art.
+                </p>
+                {/* <p className="text-label-xs mt-4 italic text-semantic-fg-subtle">
+                  Click for more
+                </p> */}
+              </div>
+              <div className="relative p-4 gap-x-4 cursor-pointer transition-colors rounded-md mt-4 group border-2 border-transparent glow:border-[#83f5e5]/50 glow:bg-[#83f5e5]/10">
+                <p className="text-label-xs text-semantic-fg-muted">
+                  2021 - 2024
+                </p>
+                <h2 className="text-heading-3 font-semibold mt-2">OPVS</h2>
+                <p className="mt-2 text-paragraph-md">
+                  Co-founded a startup specializing in software development
+                  services for emerging businesses. Led and actively
+                  participated in the development team, delivering high-quality
+                  products for clients across diverse industries, including
+                  cryptocurrency, healthcare, and e-commerce.
+                </p>
+                {/* <p className="text-label-xs mt-4 italic text-semantic-fg-subtle">
+                  Click for more
+                </p> */}
+              </div>
+              <div className="relative p-4 gap-x-4 cursor-pointer transition-colors rounded-md mt-4 group border-2 border-transparent glow:border-[#f3dec6]/50 glow:bg-[#f3dec6]/10">
+                <p className="text-label-xs text-semantic-fg-muted">
+                  2022 - 2023
+                </p>
+                <h2 className="text-heading-3 font-semibold mt-2">
+                  Inverter Network
+                </h2>
+                <p className="mt-2 text-paragraph-md">
+                  Built off-chain solutions for a Web3 protocol, closely
+                  collaborated with the business development team to forge
+                  potential partnerships, and conducted R&D on emerging
+                  technologies to enhance the protocol.
+                </p>
+                {/* <p className="text-label-xs mt-4 italic text-semantic-fg-subtle">
+                  Click for more
+                </p> */}
+              </div>
+              <div className="relative p-4 gap-x-4 cursor-pointer transition-colors rounded-md mt-4 group border-2 border-transparent glow:border-[#CD1B32]/50 glow:bg-[#CD1B32]/10">
+                <p className="text-label-xs text-semantic-fg-muted">2022</p>
+                <h2 className="text-heading-3 font-semibold mt-2">Rapsodo</h2>
+                <p className="mt-2 text-paragraph-md">
+                  Developed API services for a sports analytics platform with a
+                  focus on baseball and golf. Collaborated with Discovery to
+                  create the GolfDigest platform.
+                </p>
+                {/* <p className="text-label-xs mt-4 italic text-semantic-fg-subtle">
+                  Click for more
+                </p> */}
+              </div>
+              <div className="relative p-4 gap-x-4 cursor-pointer transition-colors rounded-md mt-4 group border-2 border-transparent glow:border-[#46766a]/50 glow:bg-[#46766a]/10">
+                <p className="text-label-xs text-semantic-fg-muted">
+                  2019-2022
+                </p>
+                <h2 className="text-heading-3 font-semibold mt-2">
+                  ETE technology & Dataunitor
+                </h2>
+                <p className="mt-2 text-paragraph-md">
+                  Developed both backend and frontend applications for a big
+                  data management platform, with a focus on retrieving and
+                  integrating data from multiple sources. Collaborated closely
+                  with blockchain and AI teams.
+                </p>
+                {/* <p className="text-label-xs mt-4 italic text-semantic-fg-subtle">
+                  Click for more
+                </p> */}
+              </div>
+            </Glow>
+          </GlowCapture>
         </div>
+        <div className="pb-20"></div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
